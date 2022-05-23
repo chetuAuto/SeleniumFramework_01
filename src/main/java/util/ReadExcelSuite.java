@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The ReadExcelSuite class is used to read excel suite
  *

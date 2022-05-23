@@ -1,4 +1,4 @@
-package main.java.model;
+package model;
 /**
  * The MethodParameters class is used as a bean class to get the details for actions
  * performed on the element

@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The ReadConfigProperty class is used to read the configuration details from
  * config file

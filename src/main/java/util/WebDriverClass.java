@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The WebDriverClass class is used to generate a single instance of driver to
  * launch the browser

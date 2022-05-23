@@ -1,4 +1,4 @@
-package main.java.actions;
+package actions;
 /**
  * The MethodType class is used to identify the method specified in the testcase 
  * excel and to perform the same action
@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import main.java.model.MethodParameters;
+import model.MethodParameters;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -34,9 +34,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
-import main.java.util.MainTestNG;
-import main.java.util.ReadElementLocators;
-import main.java.util.WebDriverClass;
+import util.MainTestNG;
+import util.ReadElementLocators;
+import util.WebDriverClass;
 
 public class MethodType {
 
@@ -111,8 +111,8 @@ public class MethodType {
 			String actionType, String data, MethodParameters model) {
 		Class cl = null;
 		try {
-			cl = (Class) Class.forName("main.java.actions.MethodType");
-			main.java.actions.MethodType clName = (MethodType) cl.newInstance();
+			cl = (Class) Class.forName("actions.MethodType");
+			actions.MethodType clName = (MethodType) cl.newInstance();
 			Method[] methods = cl.getMethods();
 			Method methodName = findMethods(actionType, methods);
 			methodName.invoke(clName, (Object) model);

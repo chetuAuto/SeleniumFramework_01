@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The SwingTest class is used to provide UI capabilities
  *

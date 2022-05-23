@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The ReadElementLocators class is used to read the element locators
  *

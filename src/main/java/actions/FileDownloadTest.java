@@ -1,4 +1,4 @@
-package main.java.actions;
+package actions;
 /**
  * The FileDownloaderTest class is used to test the FileDownloader class
  *

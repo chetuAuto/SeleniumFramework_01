@@ -1,4 +1,4 @@
-package main.java.actions;
+package actions;
 /**
  * The CheckFileHash class is used to perform the hash check operations on the 
  * given file

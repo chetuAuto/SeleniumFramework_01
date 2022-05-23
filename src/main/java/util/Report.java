@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The Report class is used to generate the report
  *

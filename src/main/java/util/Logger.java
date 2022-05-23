@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The Logger class is used to log
  *

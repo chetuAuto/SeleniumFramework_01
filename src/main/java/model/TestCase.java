@@ -1,4 +1,4 @@
-package main.java.model;
+package model;
 /**
  * The TestCase class is used as a bean class to get the details of each test case
  *

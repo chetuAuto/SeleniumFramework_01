@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The TestListener class is used to help in generating html Report
  *
@@ -22,7 +22,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import main.java.util.WebDriverClass;
+import util.WebDriverClass;
 
 /**
  * @author Shilpashree_V

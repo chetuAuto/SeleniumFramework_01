@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The ExecuteTestCases class is used to execute the test cases
  *

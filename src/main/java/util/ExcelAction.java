@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The ExcelAction class is used to store the data from the excel into map
  *
@@ -12,12 +12,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import main.java.model.CapturedObjectPropModel;
-import main.java.model.TestCase;
+import model.CapturedObjectPropModel;
+import model.TestCase;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
-import main.java.actions.MethodType;
+import actions.MethodType;
 
 public class ExcelAction {
 	WebDriver driver;

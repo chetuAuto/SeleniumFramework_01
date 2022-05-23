@@ -1,4 +1,4 @@
-package main.java.util;
+package util;
 /**
  * The MainTestNG class is used to execute the jar
  *
@@ -94,7 +94,7 @@ public class MainTestNG {
 		mySuite.addListener("org.uncommons.reportng.HTMLReporter");
 		mySuite.addListener("org.uncommons.reportng.JUnitXMLReporter");
 		
-		mySuite.addListener("main.java.util.TestListener");
+		mySuite.addListener("util.TestListener");
 	
 		myTestNG.setOutputDirectory("test-output");
 		
@@ -102,7 +102,7 @@ public class MainTestNG {
 		XmlTest myTest = new XmlTest(mySuite);
 		myTest.setName("Sample Test");
 		List<XmlClass> myClasses = new ArrayList<XmlClass>();
-		myClasses.add(new XmlClass("main.java.util.ExecuteTestCases"));
+		myClasses.add(new XmlClass("util.ExecuteTestCases"));
 		myTest.setXmlClasses(myClasses);
 		List<XmlTest> myTests = new ArrayList<XmlTest>();
 		myTests.add(myTest);

@@ -1,4 +1,4 @@
-package main.java.model;
+package model;
 /**
  * The CapturedObjectPropModel class is used as a bean class to get the Captured
  * objects properties in the excel  sheet
