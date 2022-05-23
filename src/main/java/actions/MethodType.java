@@ -771,7 +771,7 @@ public class MethodType {
 
 		Assert.assertEquals(model.getData(), model.getElement().get(0)
 				.getText().toString());
-		MainTestNG.LOGGER.info("verify text completed");
+		MainTestNG.LOGGER.info("PASS: verify text completed: "+ model.getData());
 	}
 
 	/**
