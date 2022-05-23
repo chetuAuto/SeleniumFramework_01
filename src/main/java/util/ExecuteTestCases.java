@@ -237,7 +237,7 @@ public class ExecuteTestCases implements ITest {
 		SwingTest.frame.dispose();
 		SwingTest.frame.dispatchEvent(new WindowEvent(SwingTest.frame,
 				WindowEvent.WINDOW_CLOSING));
-		
+		driver.quit();
 
 	}
 

@@ -27,9 +27,9 @@ public class test {
 			TransformerFactory transFact= TransformerFactory.newInstance(); 
 			Transformer trans=transFact.newTransformer(new StreamSource("xml/testng-results.xsl") );
 			
-			trans.setParameter("testNgXslt.outputDir", "D:/newEclipseWorksspace/SeleniumTemp/test-output");
+			trans.setParameter("testNgXslt.outputDir", System.getProperty("user.dir")+"\\test-output");
 			
-			trans.setParameter("testNgXslt.cssFile", "D:/newEclipseWorksspace/SeleniumTemp/xml/custom.css");
+			trans.setParameter("testNgXslt.cssFile", System.getProperty("user.dir")+"/xml/custom.css");
 			trans.setParameter("testNgXslt.showRuntimeTotals", "true");
 			trans.setParameter("testNgXslt.sortTestCaseLinks", "true");
 			trans.setParameter("testNgXslt.testDetailsFilter", "FAIL,PASS,SKIP,CONF,BY_CLASS");

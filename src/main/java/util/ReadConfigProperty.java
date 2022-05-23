@@ -24,7 +24,7 @@ public class ReadConfigProperty {
 	static List<String> contentFromConfigFile = new ArrayList<String>();
 	static List<String> listOfSuiteNames = new ArrayList<String>();
 	static Map<String, String> map = new HashMap<String, String>();
-	public static String configpath;
+	public static String configpath=System.getProperty("user.dir");
 	Properties properties = null;
 
 	public String getConfigValues(String elementValue) {

@@ -245,6 +245,7 @@ public class MethodType {
 						+ model.getData());
 		System.out.println("model.getElement().get(0)=="
 				+ model.getElement().get(0));
+		model.getElement().get(0).clear();
 		model.getElement().get(0).sendKeys(model.getData());
 		MainTestNG.LOGGER.info("enterText() exit");
 	}

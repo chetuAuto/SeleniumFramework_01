@@ -36,12 +36,11 @@ public class ExcelAction {
 	
 	String testcasepth = "TestCasePath";
 
-	public static void main(String[] args) {
-		ExcelAction action = new ExcelAction();
-		action.readCapturedObjectProperties();
-		action.readLocators("PAGE", "SEARCH_BOX");
-	}
-
+	/*
+	 * public static void main(String[] args) { ExcelAction action = new
+	 * ExcelAction(); action.readCapturedObjectProperties(); //
+	 * action.readLocators("PAGE", "SEARCH_BOX"); }
+	 */
 	
 	/**
 	 * Read test data sheet
@@ -412,19 +411,19 @@ public class ExcelAction {
 		List<String> locators=new ArrayList<>();
 		MainTestNG.LOGGER.info("objects"+capObjPropSheet.get(page));
 		if(capObjPropSheet.get(page) != null){
-			
+
 			MainTestNG.LOGGER.info("name"+temp.get(name));
 			CapturedObjectPropModel c=(CapturedObjectPropModel) temp.get(name);
 			MainTestNG.LOGGER.info(c.getName());
 			MainTestNG.LOGGER.info("c.getPage()="+c.getPage());
-			
+
 			if(c.getPage().equals(page) && c.getName().equals(name)){
 				locators.add(c.getProperty());
 				locators.add(c.getValue());
 				MainTestNG.LOGGER.info("locators"+locators);
 			}
-	}
+		}
 		MainTestNG.LOGGER.info("size"+locators.size());
-return locators;
-}
+		return locators;
+	}
 }
