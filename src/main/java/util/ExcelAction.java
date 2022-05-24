@@ -113,8 +113,7 @@ public class ExcelAction {
 				noOfExecution = 0;
 			}
 		}
-		MainTestNG.LOGGER
-				.info("columnValue addedd newly numberOfTimesExecution==="
+		MainTestNG.LOGGER.info("columnValue addedd newly numberOfTimesExecution==="
 						+ dataColValues);
 		MainTestNG.LOGGER.info("testCaseExecution==" + noOfExecution);
 

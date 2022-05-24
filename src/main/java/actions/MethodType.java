@@ -165,7 +165,7 @@ public class MethodType {
 	 */
 	public void findElementByXpath(String objectLocators) {
 
-		WebDriverWait wait = new WebDriverWait(WebDriverClass.getDriver(), 30);
+		WebDriverWait wait = new WebDriverWait(WebDriverClass.getDriver(), 50);
 
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By
 				.xpath(objectLocators)));
@@ -440,7 +440,11 @@ public class MethodType {
 	 *Checks that the element is displayed in the current web page
 	 */
 	public void isDisplayed(MethodParameters model) {
-		model.getElement().get(0).isDisplayed();
+		WebDriverWait wait = new WebDriverWait(WebDriverClass.getDriver(), 50);
+		wait.until(ExpectedConditions.elementToBeClickable(model.getElement().get(0))).isDisplayed();
+
+		MainTestNG.LOGGER.info("Element displayed: "+ model.getElement().get(0));
+//		model.getElement().get(0).isDisplayed();
 	}
 
 	/**

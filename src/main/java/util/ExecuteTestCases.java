@@ -192,11 +192,9 @@ public class ExecuteTestCases implements ITest {
 			Reporter.log("ex" + getTestName());
 
 		} catch (Exception ex) {
-			Assert.fail();
 			stack(ex);
-
 			Reporter.log("exception in execute testCase====" + ex);
-
+			Assert.fail();
 		}
 	}
 
